@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-color: cadetblue;
+    max-width: 900px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 500px;
+    height: 400px;
+    padding: 2rem 1rem;
+    background: radial-gradient(rgb(255, 255, 255), transparent);
+    filter: blur(100%);
+    margin: 0 auto;
+    border-radius: 25px;
+    box-shadow: 0.5rem 0.5rem 0.7rem rgba(25, 0, 0, 0.5);
+    -webkit-filter: blur(100%);
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.texto:focus {
+    outline: none;
+}
+
+.texto {
+    width: 100%;
+    padding: 10px 20px;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #1a1a11;
+    border-bottom: 1px solid #3d3d3d3d;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.botoes {
+    display: grid;
+    margin-top: 1.5rem;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.botoes>li {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    transition: background 1s ease-out;
+    box-shadow: 0.1rem 0.1rem 0.2rem rgba(25, 0, 0, 0.5);
+    -webkit-transition: background 1s ease-out;
+    -moz-transition: background 1s ease-out;
+    -ms-transition: background 1s ease-out;
+    -o-transition: background 1s ease-out;
+}
+
+.botoes>li:hover {
+    cursor: pointer;
+    background: rgba(5, 223, 252, 0.507);
+}
